@@ -7,13 +7,20 @@ import { MobileNavbar } from "./MobileNavbar";
 import { MoveUpRight } from "lucide-react";
 import { headerLinks } from "@/constants";
 import { usePathname } from "next/navigation";
-import { Separator } from "./ui/separator";
+
+import { motion } from "framer-motion";
+import { navVariants } from "@/lib/motion";
 
 const Header = () => {
 	const pathname = usePathname();
 
 	return (
-		<header className="h-20 flex items-center justify-center">
+		<motion.header
+			variants={navVariants}
+			initial="hidden"
+			whileInView="show"
+			className="h-20 flex items-center justify-center"
+		>
 			<div className="container flex items-center justify-between">
 				<Link href="/">
 					<Image
@@ -58,7 +65,7 @@ const Header = () => {
 				</div>
 				<MobileNavbar />
 			</div>
-		</header>
+		</motion.header>
 	);
 };
 

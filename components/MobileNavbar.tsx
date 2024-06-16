@@ -24,7 +24,7 @@ export function MobileNavbar() {
 	const pathname = usePathname();
 
 	return (
-		<nav className="md:hidden">
+		<nav className="lg:hidden">
 			<Sheet>
 				<SheetTrigger asChild>
 					<Image
@@ -36,39 +36,45 @@ export function MobileNavbar() {
 					/>
 				</SheetTrigger>
 				<SheetContent className="pt-8 flex items-center justify-center w-full md:w-600px">
-					<div className="w-full">
-						<ul className="flex space-y-4 uppercase flex-col text-center">
-							{headerLinks.map((link) => {
-								const isActive = pathname === link.route;
-								return (
-									<>
-										<Link
-											href={link.route}
-											className={`${
-												isActive &&
-												"text-primary font-extrabold"
-											} text-xs hover:underline hover:text-primary cursor-pointer`}
-											key={link.route}
-										>
-											{link.label}
-										</Link>
-										<Separator />
-									</>
-								);
-							})}
-						</ul>
-						<div className="flex flex-col mt-6 gap-4 w-full">
-							<Button variant={"ghost"} asChild>
-								<Link href="/sign-in">Login</Link>
-							</Button>
-							<Button asChild>
-								<Link href="/sign-up">
-									Get started{" "}
-									<MoveUpRight className="w-4 h-4 ml-2" />
-								</Link>
-							</Button>
+					<SheetClose asChild>
+						<div className="w-full">
+							<ul className="flex space-y-4 uppercase flex-col text-center">
+								{headerLinks.map((link) => {
+									const isActive = pathname === link.route;
+									return (
+										<>
+											<SheetClose
+												asChild
+												key={link.route}
+											>
+												<Link
+													href={link.route}
+													className={`${
+														isActive &&
+														"text-primary font-extrabold"
+													} text-xs hover:underline hover:text-primary cursor-pointer`}
+												>
+													{link.label}
+												</Link>
+											</SheetClose>
+											<Separator />
+										</>
+									);
+								})}
+							</ul>
+							<div className="flex flex-col mt-6 gap-4 w-full">
+								<Button variant={"ghost"} asChild>
+									<Link href="/sign-in">Login</Link>
+								</Button>
+								<Button asChild>
+									<Link href="/sign-up">
+										Get started{" "}
+										<MoveUpRight className="w-4 h-4 ml-2" />
+									</Link>
+								</Button>
+							</div>
 						</div>
-					</div>
+					</SheetClose>
 				</SheetContent>
 			</Sheet>
 		</nav>
