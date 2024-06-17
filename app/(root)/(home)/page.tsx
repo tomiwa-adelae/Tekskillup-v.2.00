@@ -7,6 +7,7 @@ import WhyChooseUs from "./_components/WhyChooseUs";
 import TopCategories from "./_components/TopCategories";
 import FeaturedCourses from "./_components/FeaturedCourses";
 import FAQs from "./_components/FAQs";
+import Testimonials from "./_components/Testimonials";
 
 export default function Home() {
 	return (
@@ -20,6 +21,8 @@ export default function Home() {
 			<WhyChooseUs />
 			<TopCategories />
 			<FeaturedCourses />
+			<ScrollingCompanies />
+			<Testimonials />
 			<FAQs />
 		</>
 	);

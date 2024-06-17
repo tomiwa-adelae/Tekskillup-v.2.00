@@ -71,28 +71,28 @@ export const topCategories = [
 		number: 30,
 		icon: Briefcase,
 		color: "#4ade80",
-		opacity: 0.7,
+		bgColor: "rgba(16, 185, 129, 0.2)",
 	},
 	{
 		title: "Web Development",
 		number: 30,
 		icon: Briefcase,
 		color: "#c084fc",
-		opacity: 0.7,
+		bgColor: "rgba(16, 185, 129, 0.2)",
 	},
 	{
 		title: "Web Development",
 		number: 30,
 		icon: Briefcase,
 		color: "#f43f5e",
-		opacity: 0.7,
+		bgColor: "rgba(16, 185, 129, 0.2)",
 	},
 	{
 		title: "Web Development",
 		number: 30,
 		icon: Briefcase,
 		color: "#7dd3fc",
-		opacity: 0.7,
+		bgColor: "rgba(16, 185, 129, 0.2)",
 	},
 ];
 
@@ -157,31 +157,200 @@ export const faqs = [
 export const testimonials = [
 	{
 		image: "/assets/user.jpg",
-		testimony: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tenetur facere optio quam cum nam quis. Quae rerum illo placeat distinctio assumenda ab aliquam, exercitationem ratione. Corporis doloribus enim omnis?ern.",
-		name:"Samson Smith",
-		title: 'Senior dev'
+		testimony:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tenetur facere optio quam cum nam quis. Quae rerum illo placeat distinctio assumenda ab aliquam, exercitationem ratione. Corporis doloribus enim omnis?ern.",
+		name: "Samson Smith",
+		title: "Senior dev",
 	},
 	{
 		image: "/assets/user.jpg",
-		testimony: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tenetur facere optio quam cum nam quis. Quae rerum illo placeat distinctio assumenda ab aliquam, exercitationem ratione. Corporis doloribus enim omnis?ern.",
-		name:"Samson Smith",
-		title: 'Senior dev'
+		testimony:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tenetur facere optio quam cum nam quis. Quae rerum illo placeat distinctio assumenda ab aliquam, exercitationem ratione. Corporis doloribus enim omnis?ern.",
+		name: "Samson Smith",
+		title: "Senior dev",
 	},
 	{
 		image: "/assets/user.jpg",
-		testimony: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tenetur facere optio quam cum nam quis. Quae rerum illo placeat distinctio assumenda ab aliquam, exercitationem ratione. Corporis doloribus enim omnis?ern.",
-		name:"Samson Smith",
-		title: 'Senior dev'
+		testimony:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tenetur facere optio quam cum nam quis. Quae rerum illo placeat distinctio assumenda ab aliquam, exercitationem ratione. Corporis doloribus enim omnis?ern.",
+		name: "Samson Smith",
+		title: "Senior dev",
 	},
 	{
 		image: "/assets/user.jpg",
-		testimony: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tenetur facere optio quam cum nam quis. Quae rerum illo placeat distinctio assumenda ab aliquam, exercitationem ratione. Corporis doloribus enim omnis?ern.",
-		name:"Samson Smith",
-		title: 'Senior dev'
+		testimony:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tenetur facere optio quam cum nam quis. Quae rerum illo placeat distinctio assumenda ab aliquam, exercitationem ratione. Corporis doloribus enim omnis?ern.",
+		name: "Samson Smith",
+		title: "Senior dev",
 	},
 	{
 		image: "/assets/user.jpg",
-		testimony: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tenetur facere optio quam cum nam quis. Quae rerum illo placeat distinctio assumenda ab aliquam, exercitationem ratione. Corporis doloribus enim omnis?ern.",
-		name:"Samson Smith",
-		title: 'Senior dev'
-	},];
+		testimony:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tenetur facere optio quam cum nam quis. Quae rerum illo placeat distinctio assumenda ab aliquam, exercitationem ratione. Corporis doloribus enim omnis?ern.",
+		name: "Samson Smith",
+		title: "Senior dev",
+	},
+];
+
+export const socials = [
+	{
+		link: "facebook.com",
+		icon: Briefcase,
+		name: "Facebook",
+		color: "#f43f5e",
+	},
+	{
+		link: "facebook.com",
+		icon: Briefcase,
+		name: "Facebook",
+		color: "#7dd3fc",
+	},
+	{
+		link: "https://facebook.com",
+		icon: Briefcase,
+		name: "Facebook",
+		color: "#c084fc",
+	},
+];
+
+export const aboutUsBoxes = [
+	{
+		title: "Our Mission",
+		icon: Briefcase,
+		color: "#4ade80",
+		bgColor: "rgba(16, 185, 129, 0.2)",
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, excepturi ea recusandae voluptate nisi error aliquid minus nihil sunt dolore dolorum quod amet commodi ipsam rerum accusantium perferendis, unde veniam?",
+	},
+	{
+		title: "Our Vision",
+		icon: Briefcase,
+		color: "#4ade80",
+		bgColor: "rgba(16, 185, 129, 0.2)",
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, excepturi ea recusandae voluptate nisi error aliquid minus nihil sunt dolore dolorum quod amet commodi ipsam rerum accusantium perferendis, unde veniam?",
+	},
+	{
+		title: "Our Values",
+		icon: Briefcase,
+		color: "#4ade80",
+		bgColor: "rgba(16, 185, 129, 0.2)",
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, excepturi ea recusandae voluptate nisi error aliquid minus nihil sunt dolore dolorum quod amet commodi ipsam rerum accusantium perferendis, unde veniam?",
+	},
+];
+
+export const worldClassLearning = [
+	{
+		title: "World Class",
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, excepturi ea recusandae voluptate nisi error aliquid minus nihil sunt dolore dolorum ",
+		icon: Briefcase,
+		color: "#4ade80",
+		bgColor: "rgba(16, 185, 129, 0.2)",
+	},
+	{
+		title: "Flexible",
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, excepturi ea recusandae voluptate nisi error aliquid minus nihil sunt dolore dolorum ",
+		icon: Briefcase,
+		color: "#4ade80",
+		bgColor: "rgba(16, 185, 129, 0.2)",
+	},
+	{
+		title: "Affordable",
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, excepturi ea recusandae voluptate nisi error aliquid minus nihil sunt dolore dolorum ",
+		icon: Briefcase,
+		color: "#4ade80",
+		bgColor: "rgba(16, 185, 129, 0.2)",
+	},
+	{
+		title: "Job Relevant",
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, excepturi ea recusandae voluptate nisi error aliquid minus nihil sunt dolore dolorum ",
+		icon: Briefcase,
+		color: "#4ade80",
+		bgColor: "rgba(16, 185, 129, 0.2)",
+	},
+];
+
+export const achievements = [
+	{
+		title: "Award Wining Courses",
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, excepturi ea recusandae voluptate nisi error aliquid minus nihil sunt dolore dolorum ",
+		icon: Briefcase,
+		color: "#4ade80",
+		bgColor: "rgba(16, 185, 129, 0.2)",
+	},
+	{
+		title: "Inductry Partnerships",
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, excepturi ea recusandae voluptate nisi error aliquid minus nihil sunt dolore dolorum ",
+		icon: Briefcase,
+		color: "#4ade80",
+		bgColor: "rgba(16, 185, 129, 0.2)",
+	},
+	{
+		title: "Positive Student Feedback",
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, excepturi ea recusandae voluptate nisi error aliquid minus nihil sunt dolore dolorum ",
+		icon: Briefcase,
+		color: "#4ade80",
+		bgColor: "rgba(16, 185, 129, 0.2)",
+	},
+	{
+		title: "Trusted by Thousands",
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, excepturi ea recusandae voluptate nisi error aliquid minus nihil sunt dolore dolorum ",
+		icon: Briefcase,
+		color: "#4ade80",
+		bgColor: "rgba(16, 185, 129, 0.2)",
+	},
+];
+
+export const ourTeams = [
+	{
+		title: "Award Wining Courses",
+		name: "James Spader",
+		bgColor: "#4ade80",
+		image: "/assets/team.png",
+	},
+	{
+		title: "Award Wining Courses",
+		name: "James Spader",
+		bgColor: "#4ade80",
+		image: "/assets/team.png",
+	},
+	{
+		title: "Award Wining Courses",
+		name: "James Spader",
+		bgColor: "#4ade80",
+		image: "/assets/team.png",
+	},
+	{
+		title: "Award Wining Courses",
+		name: "James Spader",
+		bgColor: "#4ade80",
+		image: "/assets/team.png",
+	},
+	{
+		title: "Award Wining Courses",
+		name: "James Spader",
+		bgColor: "#4ade80",
+		image: "/assets/team.png",
+	},
+	{
+		title: "Award Wining Courses",
+		name: "James Spader",
+		bgColor: "#4ade80",
+		image: "/assets/team.png",
+	},
+	{
+		title: "Award Wining Courses",
+		name: "James Spader",
+		bgColor: "#4ade80",
+		image: "/assets/team.png",
+	},
+];

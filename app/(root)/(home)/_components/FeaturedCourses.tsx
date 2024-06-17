@@ -51,7 +51,7 @@ const FeaturedCourses = () => {
 				})}
 			</div>
 			<div className="text-center mt-8">
-				<Button asChild>
+				<Button size={"lg"} asChild>
 					<Link href="/courses">View all</Link>
 				</Button>
 			</div>

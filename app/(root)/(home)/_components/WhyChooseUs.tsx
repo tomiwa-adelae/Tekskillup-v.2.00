@@ -30,7 +30,7 @@ const WhyChooseUs = () => {
 				tempore ipsa reprehenderit obcaecati?
 			</motion.p>
 
-			<div className="flex flex-col md:flex-row gap-4 mt-8">
+			<div className="flex flex-col md:flex-row gap-4 mt-12">
 				{whyChooseUs.map((why, index) => {
 					const IconComponent = why.icon;
 					return (
@@ -51,9 +51,7 @@ const WhyChooseUs = () => {
 								<h4 className="font-bold text-base">
 									{why.title}
 								</h4>
-								<p className="text-xs md:text-sm">
-									{why.description}
-								</p>
+								<p className="text-xs">{why.description}</p>
 							</div>
 						</motion.div>
 					);

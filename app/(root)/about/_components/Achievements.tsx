@@ -1,13 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { fadeIn, staggerContainer, textVariant } from "@/lib/motion";
+import { fadeIn, slideIn, staggerContainer, textVariant } from "@/lib/motion";
 import { TypingSubText } from "@/components/CustomTexts";
 import { Briefcase } from "lucide-react";
-import { topCategories } from "@/constants";
+import { achievements } from "@/constants";
 import { cn } from "@/lib/utils";
 
-const TopCategories = () => {
+const Achievements = () => {
 	return (
 		<motion.div
 			// @ts-ignore
@@ -15,36 +15,38 @@ const TopCategories = () => {
 			initial="hidden"
 			whileInView="show"
 			viewport={{ once: false, amount: 0.25 }}
-			className="container py-12"
+			className="container py-12 bg-green-100"
 		>
 			<TypingSubText
-				title="Top Categories?"
+				title="Achievements"
 				textStyles="text-center text-2xl lg:text-3xl"
 			/>
 			<motion.p
 				variants={textVariant(1.2)}
 				className="text-xs lg:text-sm mt-4 text-center lg:w-3/4 mx-auto"
 			>
-				24,000+ unique online courses list design
+				{" "}
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+				Voluptatum facere nobis eligendi sit nemo
 			</motion.p>
 
-			<div className="flex flex-wrap gap-4 mt-8">
-				{topCategories.map(
-					({ color, bgColor, title, number, icon }, index) => {
+			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
+				{achievements.map(
+					({ color, bgColor, title, description, icon }, index) => {
 						const IconComponent = icon;
 						return (
 							<motion.div
-								variants={fadeIn(
+								variants={slideIn(
 									"right",
-									"spring",
+									"tween",
 									index * 0.5,
 									0.75
 								)}
-								className="flex-1 text-center flex flex-col items-center justify-center gap-6 border border-gray-300 p-8 rounded-lg min-h-60"
+								className="bg-white flex-1 flex flex-col items-start justify-center gap-2 p-6 rounded-lg min-h-60"
 								key={index}
 							>
 								<div
-									className={`p-3 rounded-full w-fit border-2`}
+									className={`p-3 rounded-lg w-fit border-2`}
 									style={{
 										borderColor: color,
 										background: bgColor,
@@ -52,10 +54,10 @@ const TopCategories = () => {
 								>
 									<IconComponent size={30} />
 								</div>
-								<h4 className="font-bold text-base">{title}</h4>
-								<p className="text-xs md:text-sm">
-									{number} Courses
-								</p>
+								<h4 className="font-bold text-base mt-4">
+									{title}
+								</h4>
+								<p className="text-xs">{description}</p>
 							</motion.div>
 						);
 					}
@@ -65,4 +67,4 @@ const TopCategories = () => {
 	);
 };
 
-export default TopCategories;
+export default Achievements;
