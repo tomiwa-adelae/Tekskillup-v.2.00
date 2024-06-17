@@ -10,6 +10,7 @@ import { usePathname } from "next/navigation";
 
 import { motion } from "framer-motion";
 import { navVariants } from "@/lib/motion";
+import { SignedOut, SignedIn, UserButton } from "@clerk/nextjs";
 
 const Header = () => {
 	const pathname = usePathname();
@@ -53,16 +54,22 @@ const Header = () => {
 						})}
 					</ul>
 				</nav>
-				<div className="hidden md:flex items-center justify-center gap-4">
-					<Button variant={"ghost"} asChild>
-						<Link href="/sign-in">Login</Link>
-					</Button>
-					<Button asChild>
-						<Link href="/sign-up">
-							Get started <MoveUpRight className="w-4 h-4 ml-2" />
-						</Link>
-					</Button>
-				</div>
+				<SignedIn>
+					<UserButton afterSignOutUrl="/" />
+				</SignedIn>
+				<SignedOut>
+					<div className="hidden md:flex items-center justify-center gap-4">
+						<Button variant={"ghost"} asChild>
+							<Link href="/sign-in">Login</Link>
+						</Button>
+						<Button asChild>
+							<Link href="/sign-up">
+								Get started{" "}
+								<MoveUpRight className="w-4 h-4 ml-2" />
+							</Link>
+						</Button>
+					</div>
+				</SignedOut>
 				<MobileNavbar />
 			</div>
 		</motion.header>
