@@ -11,7 +11,7 @@ const Footer = () => {
 			variants={footerVariants}
 			initial="hidden"
 			whileInView="show"
-			className="flex flex-col sm:flex-row py-6 items-start sm:items-center justify-between container gap-6"
+			className="flex flex-col text-center sm:flex-row py-6 items-center sm:items-center justify-between container gap-6 border-t border-gray-300"
 		>
 			<div className="flex-1">
 				<Image

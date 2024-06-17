@@ -6,8 +6,9 @@ import Benefits from "./_components/Benefits";
 import WhyChooseUs from "./_components/WhyChooseUs";
 import TopCategories from "./_components/TopCategories";
 import FeaturedCourses from "./_components/FeaturedCourses";
-import FAQs from "./_components/FAQs";
+import FAQs from "../../../components/FAQs";
 import Testimonials from "./_components/Testimonials";
+import SuccessStats from "@/components/SuccessStats";
 
 export default function Home() {
 	return (
@@ -15,6 +16,7 @@ export default function Home() {
 			<Showcase />
 			<ScrollingCompanies />
 			<OurSuccess />
+			<SuccessStats />
 			<WhatIsTekskillup />
 			<ScrollingCompanies />
 			<Benefits />

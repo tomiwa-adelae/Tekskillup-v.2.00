@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { fadeIn, staggerContainer, textVariant } from "@/lib/motion";
+import { staggerContainer, textVariant } from "@/lib/motion";
 import { TypingSubText } from "@/components/CustomTexts";
 
 const OurSuccess = () => {
@@ -27,42 +27,6 @@ const OurSuccess = () => {
 				id officiis quam, doloribus adipisci vero inventore atque et
 				tempore ipsa reprehenderit obcaecati?
 			</motion.p>
-
-			<motion.div
-				variants={fadeIn("up", "tween", 0.2, 1)}
-				className="mt-8 flex items-center justify-center gap-4 flex-wrap md:justify-between"
-			>
-				<div className="flex flex-col gap-1 items-center justify-center">
-					<h2 className="text-primary font-bold text-3xl md:text-4xl lg:text-5xl">
-						15K+
-					</h2>
-					<p className="text-xs font-medium md:text-sm">Students</p>
-				</div>
-				<div className="flex flex-col gap-1 items-center justify-center">
-					<h2 className="text-primary font-bold text-3xl md:text-4xl lg:text-6xl">
-						15K+
-					</h2>
-					<p className="text-xs font-medium md:text-sm">Students</p>
-				</div>
-				<div className="flex flex-col gap-1 items-center justify-center">
-					<h2 className="text-primary font-bold text-3xl md:text-4xl lg:text-5xl">
-						15K+
-					</h2>
-					<p className="text-xs font-medium md:text-sm">Students</p>
-				</div>
-				<div className="flex flex-col gap-1 items-center justify-center">
-					<h2 className="text-primary font-bold text-3xl md:text-4xl lg:text-5xl">
-						15K+
-					</h2>
-					<p className="text-xs font-medium md:text-sm">Students</p>
-				</div>
-				<div className="flex flex-col gap-1 items-center justify-center">
-					<h2 className="text-primary font-bold text-3xl md:text-4xl lg:text-5xl">
-						15K+
-					</h2>
-					<p className="text-xs font-medium md:text-sm">Students</p>
-				</div>
-			</motion.div>
 		</motion.div>
 	);
 };

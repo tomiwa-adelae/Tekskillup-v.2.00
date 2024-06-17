@@ -1,15 +1,12 @@
-"use client";
-
-import { staggerContainer } from "@/lib/motion";
 import { TypingSubText } from "@/components/CustomTexts";
-import { featuredCourses } from "@/constants";
+import { topCourses } from "@/constants";
 import CourseCard from "@/components/CourseCard";
 
-const FeaturedCourses = () => {
+const TopCourses = () => {
 	return (
 		<div className="container py-12">
 			<TypingSubText
-				title="Featured Courses"
+				title="Top Courses"
 				textStyles="text-center text-2xl lg:text-3xl"
 			/>
 			<p className="text-xs lg:text-sm mt-4 text-center lg:w-3/4 mx-auto">
@@ -19,7 +16,7 @@ const FeaturedCourses = () => {
 				veritatis sunt.
 			</p>
 			<div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-				{featuredCourses.map(({ price, title, image, id }, index) => {
+				{topCourses.map(({ price, title, image, id }, index) => {
 					return (
 						<CourseCard
 							price={price}
@@ -35,4 +32,4 @@ const FeaturedCourses = () => {
 	);
 };
 
-export default FeaturedCourses;
+export default TopCourses;

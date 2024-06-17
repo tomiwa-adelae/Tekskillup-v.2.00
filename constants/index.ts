@@ -377,3 +377,186 @@ export const contactLinks = [
 		color: "#4ade80",
 	},
 ];
+
+export const coursesAdvantages = [
+	{
+		title: "Globalization",
+		description:
+			"Contrary to popular belief, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, neque?",
+		icon: Briefcase,
+	},
+
+	{
+		title: "Latest Top SKills",
+		description:
+			"Contrary to popular belief, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, neque?",
+		icon: Layers,
+	},
+
+	{
+		title: "Cost-effectiveness",
+		description:
+			"Contrary to popular belief, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, neque?",
+		icon: UserRound,
+	},
+];
+
+export const topCourses = [
+	{
+		title: "Web Development",
+		price: 3000,
+		id: "828282",
+		image: "/assets/test.jpg",
+	},
+	{
+		title: "Web Development",
+		price: 3000,
+		id: "8282",
+		image: "/assets/test.jpg",
+	},
+	{
+		title: "Web Development",
+		price: 3000,
+		id: "882",
+		image: "/assets/test.jpg",
+	},
+	{
+		title: "Web Development",
+		price: 3000,
+		id: "8282",
+		image: "/assets/test.jpg",
+	},
+	{
+		title: "Web Development",
+		price: 3000,
+		id: "882",
+		image: "/assets/test.jpg",
+	},
+	{
+		title: "Web Development",
+		price: 3000,
+		id: "8282",
+		image: "/assets/test.jpg",
+	},
+];
+
+export const popularCategories = [
+	{
+		title: "UI/UX",
+		number: 4,
+	},
+	{
+		title: "Data analysis",
+		number: 4,
+	},
+	{
+		title: "Python",
+		number: 4,
+	},
+	{
+		title: "JavaScript",
+		number: 4,
+	},
+	{
+		title: "Web Development",
+		number: 4,
+	},
+	{
+		title: "UI/UX",
+		number: 4,
+	},
+	{
+		title: "Data analysis",
+		number: 4,
+	},
+	{
+		title: "Python",
+		number: 4,
+	},
+	{
+		title: "JavaScript",
+		number: 4,
+	},
+	{
+		title: "Web Development",
+		number: 4,
+	},
+];
+
+export const successStats = [
+	{
+		value: "15k+",
+		title: "Students",
+	},
+	{
+		value: "15k+",
+		title: "Students",
+	},
+	{
+		value: "15k+",
+		title: "Students",
+	},
+	{
+		value: "15k+",
+		title: "Students",
+	},
+	{
+		value: "15k+",
+		title: "Students",
+	},
+	{
+		value: "15k+",
+		title: "Students",
+	},
+];
+
+export const popularInstructors = [
+	{
+		name: "Jonnah Smith",
+		image: "/assets/user.jpg",
+		facebookURL: "https://facebook.com",
+		instagramURL: "https://facebook.com",
+		twitterURL: "https://facebook.com",
+	},
+	{
+		name: "Jonnah Smith",
+		image: "/assets/user.jpg",
+		facebookURL: "https://facebook.com",
+		instagramURL: "https://facebook.com",
+		twitterURL: "https://facebook.com",
+	},
+	{
+		name: "Jonnah Smith",
+		image: "/assets/user.jpg",
+		facebookURL: "https://facebook.com",
+		instagramURL: "https://facebook.com",
+		twitterURL: "https://facebook.com",
+	},
+];
+
+export const upcomingCourses = [
+	{
+		title: "Jonnah Smith",
+		image: "/assets/test.jpg",
+		startDate: "2024-22-09",
+		price: 40000,
+	},
+	{
+		title: "Jonnah Smith",
+		image: "/assets/test.jpg",
+		startDate: "2024-22-09",
+		price: 40000,
+	},
+	{
+		title: "Jonnah Smith",
+		image: "/assets/test.jpg",
+		startDate: "2024-22-09",
+		price: 40000,
+	},
+	{
+		title: "Jonnah Smith",
+		image: "/assets/test.jpg",
+		startDate: "2024-22-09",
+		price: 40000,
+	},
+];

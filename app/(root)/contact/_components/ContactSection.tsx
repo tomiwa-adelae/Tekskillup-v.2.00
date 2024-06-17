@@ -179,17 +179,14 @@ const ContactSection = () => {
 					</Form>
 				</div>
 			</motion.div>
-			<motion.div
-				className="flex-1"
-				// variants={slideIn("up", "tween", 0.2, 1)}
-			>
+			<div className="flex-1">
 				<TypingSubText
 					title="Contact Message"
 					textStyles="text-2xl lg:text-3xl"
 				/>
 				<motion.p
 					variants={textVariant(1.2)}
-					className="text-xs mt-2 lg:text-sm"
+					className="text-xs mt-3 lg:text-sm"
 				>
 					We would love to hear from you.
 				</motion.p>
@@ -245,7 +242,7 @@ const ContactSection = () => {
 						);
 					})}
 				</div>
-			</motion.div>
+			</div>
 		</motion.div>
 	);
 };

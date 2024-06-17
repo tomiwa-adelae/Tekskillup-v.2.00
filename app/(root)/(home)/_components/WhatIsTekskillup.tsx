@@ -17,7 +17,7 @@ const WhatIsTekskillup = () => {
 			initial="hidden"
 			whileInView="show"
 			viewport={{ once: false, amount: 0.25 }}
-			className="flex flex-col gap-4 md:flex-row items-center justify-between text-center md:text-left container pb-12"
+			className="flex flex-col gap-4 md:flex-row items-center justify-between text-center md:text-left container py-12"
 		>
 			<motion.div
 				className="flex-1"
