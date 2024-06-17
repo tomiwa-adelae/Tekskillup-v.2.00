@@ -5,7 +5,6 @@ import { fadeIn, staggerContainer, textVariant } from "@/lib/motion";
 import { TypingSubText } from "@/components/CustomTexts";
 import { ArrowRight, Book, Briefcase } from "lucide-react";
 import { popularCategories } from "@/constants";
-import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";

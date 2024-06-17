@@ -3,9 +3,7 @@
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer, textVariant } from "@/lib/motion";
 import { TypingSubText } from "@/components/CustomTexts";
-import { Briefcase } from "lucide-react";
 import { worldClassLearning } from "@/constants";
-import { cn } from "@/lib/utils";
 
 const WorldClassLearning = () => {
 	return (

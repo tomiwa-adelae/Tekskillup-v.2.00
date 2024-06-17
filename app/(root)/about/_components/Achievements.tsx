@@ -1,11 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { fadeIn, slideIn, staggerContainer, textVariant } from "@/lib/motion";
+import { slideIn, staggerContainer, textVariant } from "@/lib/motion";
 import { TypingSubText } from "@/components/CustomTexts";
-import { Briefcase } from "lucide-react";
 import { achievements } from "@/constants";
-import { cn } from "@/lib/utils";
 
 const Achievements = () => {
 	return (

@@ -1,13 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { fadeIn, slideIn, staggerContainer, textVariant } from "@/lib/motion";
+import { slideIn, staggerContainer, textVariant } from "@/lib/motion";
 import { TypingSubText } from "@/components/CustomTexts";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { MoveRight } from "lucide-react";
 import Lottie from "lottie-react";
 import animationData from "@/public/assets/animations/showcase-animation.json";
+import { SparklesCore } from "@/components/ui/sparkles";
 
 const WhatIsTekskillup = () => {
 	return (
@@ -23,7 +24,7 @@ const WhatIsTekskillup = () => {
 				className="flex-1"
 				variants={slideIn("left", "tween", 0.2, 1)}
 			>
-				{/* <Lottie animationData={animationData} /> */}
+				<Lottie animationData={animationData} />
 			</motion.div>
 			<div className="flex-1">
 				<TypingSubText

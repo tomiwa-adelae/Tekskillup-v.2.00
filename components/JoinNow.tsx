@@ -7,6 +7,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Folder, MoveUpRight } from "lucide-react";
+
 const JoinNow = () => {
 	return (
 		<motion.div
@@ -58,9 +59,9 @@ const JoinNow = () => {
 			<motion.div
 				variants={fadeIn("left", "tween", 0.2, 1)}
 				style={{
-					backgroundColor: "rgb(199,47,131)",
+					backgroundColor: "rgb(136,198,42)",
 					backgroundImage:
-						"linear-gradient(90deg, rgba(199,47,131,1) 0%, rgba(143,51,94,1) 46%, rgba(128,20,121,1) 100%)",
+						"linear-gradient(90deg, rgba(136,198,42,1) 0%, rgba(79,143,51,1) 46%, rgba(23,136,38,1) 100%)",
 				}}
 				className="w-full relative bg-green-400 px-4 py-6 lg:p-8 text-white rounded-lg flex items-start justify-between gap-4"
 			>

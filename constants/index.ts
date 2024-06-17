@@ -560,3 +560,39 @@ export const upcomingCourses = [
 		price: 40000,
 	},
 ];
+
+export const courseContents = [
+	{
+		content: "Jonnah Smith hshshsshshs shshshwys shshs",
+	},
+	{
+		content: "Jonnah Smith hshshsshshs shshshwys shshs",
+	},
+	{
+		content: "Jonnah Smith hshshsshshs shshshwys shshs",
+	},
+	{
+		content: "Jonnah Smith hshshsshshs shshshwys shshs",
+	},
+	{
+		content: "Jonnah Smith hshshsshshs shshshwys shshs",
+	},
+	{
+		content: "Jonnah Smith hshshsshshs shshshwys shshs",
+	},
+	{
+		content: "Jonnah Smith hshshsshshs shshshwys shshs",
+	},
+	{
+		content: "Jonnah Smith hshshsshshs shshshwys shshs",
+	},
+	{
+		content: "Jonnah Smith hshshsshshs shshshwys shshs",
+	},
+	{
+		content: "Jonnah Smith hshshsshshs shshshwys shshs",
+	},
+	{
+		content: "Jonnah Smith hshshsshshs shshshwys shshs",
+	},
+];

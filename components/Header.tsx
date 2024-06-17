@@ -19,7 +19,7 @@ const Header = () => {
 			variants={navVariants}
 			initial="hidden"
 			whileInView="show"
-			className="h-20 flex items-center justify-center"
+			className="h-20 z-1000 flex items-center justify-center"
 		>
 			<div className="container flex items-center justify-between">
 				<Link href="/">

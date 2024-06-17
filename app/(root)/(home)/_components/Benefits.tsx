@@ -1,13 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { fadeIn, slideIn, staggerContainer, textVariant } from "@/lib/motion";
+import { slideIn, staggerContainer } from "@/lib/motion";
 import { TypingSubText } from "@/components/CustomTexts";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
-import { Briefcase, Layers, MoveRight, UserRound } from "lucide-react";
-import Lottie from "lottie-react";
-import animationData from "@/public/assets/animations/showcase-animation.json";
 import Image from "next/image";
 import { benefits } from "@/constants";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
