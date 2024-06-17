@@ -19,7 +19,7 @@ export default function Home() {
 			<Benefits />
 			<WhyChooseUs />
 			<TopCategories />
-			{/* <FeaturedCourses /> */}
+			<FeaturedCourses />
 			<FAQs />
 		</>
 	);

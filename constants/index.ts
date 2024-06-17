@@ -124,22 +124,17 @@ export const featuredCourses = [
 	{
 		title: "Web Development",
 		price: 3000,
-		id: "82282",
+		id: "882",
 		image: "/assets/test.jpg",
 	},
 	{
 		title: "Web Development",
 		price: 3000,
-		id: "28282",
-		image: "/assets/test.jpg",
-	},
-	{
-		title: "Web Development",
-		price: 3000,
-		id: "82828200",
+		id: "8282",
 		image: "/assets/test.jpg",
 	},
 ];
+
 export const faqs = [
 	{
 		question: "Can I enroll in multiple courses at once?",
@@ -158,3 +153,35 @@ export const faqs = [
 		answer: "Yes. It adheres to the WAI-ARIA design pattern.",
 	},
 ];
+
+export const testimonials = [
+	{
+		image: "/assets/user.jpg",
+		testimony: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tenetur facere optio quam cum nam quis. Quae rerum illo placeat distinctio assumenda ab aliquam, exercitationem ratione. Corporis doloribus enim omnis?ern.",
+		name:"Samson Smith",
+		title: 'Senior dev'
+	},
+	{
+		image: "/assets/user.jpg",
+		testimony: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tenetur facere optio quam cum nam quis. Quae rerum illo placeat distinctio assumenda ab aliquam, exercitationem ratione. Corporis doloribus enim omnis?ern.",
+		name:"Samson Smith",
+		title: 'Senior dev'
+	},
+	{
+		image: "/assets/user.jpg",
+		testimony: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tenetur facere optio quam cum nam quis. Quae rerum illo placeat distinctio assumenda ab aliquam, exercitationem ratione. Corporis doloribus enim omnis?ern.",
+		name:"Samson Smith",
+		title: 'Senior dev'
+	},
+	{
+		image: "/assets/user.jpg",
+		testimony: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tenetur facere optio quam cum nam quis. Quae rerum illo placeat distinctio assumenda ab aliquam, exercitationem ratione. Corporis doloribus enim omnis?ern.",
+		name:"Samson Smith",
+		title: 'Senior dev'
+	},
+	{
+		image: "/assets/user.jpg",
+		testimony: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tenetur facere optio quam cum nam quis. Quae rerum illo placeat distinctio assumenda ab aliquam, exercitationem ratione. Corporis doloribus enim omnis?ern.",
+		name:"Samson Smith",
+		title: 'Senior dev'
+	},];

@@ -3,89 +3,31 @@
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer, textVariant } from "@/lib/motion";
 import { TypingSubText } from "@/components/CustomTexts";
-import { Briefcase } from "lucide-react";
-import { topCategories } from "@/constants";
+import { ArrowRight, Briefcase } from "lucide-react";
+import { featuredCourses, topCategories } from "@/constants";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const FeaturedCourses = () => {
 	return (
-		<motion.div
-			// @ts-ignore
-			variants={staggerContainer}
-			initial="hidden"
-			whileInView="show"
-			viewport={{ once: false, amount: 0.25 }}
-			className="container py-12"
-		>
+		<div className="container py-12">
 			<TypingSubText
 				title="Featured Courses"
 				textStyles="text-center text-2xl lg:text-3xl"
 			/>
-			<motion.p
-				variants={textVariant(1.2)}
-				className="text-xs lg:text-sm mt-4 text-center lg:w-3/4 mx-auto"
-			>
-				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
-				expedita ullam nostrum tempora voluptatem hic quae, ipsam
-				obcaecati corrupti veritatis temporibus praesentium dolores fuga
-				odio.
-			</motion.p>
-
-			<div className="grid">
-				{[
-					{
-						title: "Web Development",
-						price: 3000,
-						id: "828282",
-						image: "/assets/test.jpg",
-					},
-					{
-						title: "Web Development",
-						price: 3000,
-						id: "8282",
-						image: "/assets/test.jpg",
-					},
-					{
-						title: "Web Development",
-						price: 3000,
-						id: "882",
-						image: "/assets/test.jpg",
-					},
-					{
-						title: "Web Development",
-						price: 3000,
-						id: "8282",
-						image: "/assets/test.jpg",
-					},
-					{
-						title: "Web Development",
-						price: 3000,
-						id: "82282",
-						image: "/assets/test.jpg",
-					},
-					{
-						title: "Web Development",
-						price: 3000,
-						id: "28282",
-						image: "/assets/test.jpg",
-					},
-					{
-						title: "Web Development",
-						price: 3000,
-						id: "82828200",
-						image: "/assets/test.jpg",
-					},
-				].map(({ price, title, image, id }, index) => {
+			<p className="text-xs lg:text-sm mt-4 text-center lg:w-3/4 mx-auto">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+				ullam, labore quasi repellendus quod veritatis voluptates vitae
+				consequuntur laborum. Non magnam repellendus doloremque
+				veritatis sunt.
+			</p>
+			<div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+				{featuredCourses.map(({ price, title, image, id }, index) => {
 					return (
 						<motion.div
-							variants={fadeIn(
-								"right",
-								"spring",
-								index * 0.5,
-								0.75
-							)}
-							// className="flex flex-col items-center justify-center gap-3 border border-gray-300 p-2 rounded-lg"
+							className="flex flex-col justify-center gap-3 border border-gray-300 p-2 rounded-lg"
 							key={index}
 						>
 							<Image
@@ -96,11 +38,24 @@ const FeaturedCourses = () => {
 								className="aspect-video rounded-lg"
 							/>
 							<h4 className="font-bold text-base">{title}</h4>
+							<p className="text-sm">{price}</p>
+							<div className="w-auto text-right">
+								<Button size={"sm"} asChild>
+									<Link href={`/courses/${id}`}>
+										<ArrowRight className="w-4 h-4" />
+									</Link>
+								</Button>
+							</div>
 						</motion.div>
 					);
 				})}
 			</div>
-		</motion.div>
+			<div className="text-center mt-8">
+				<Button asChild>
+					<Link href="/courses">View all</Link>
+				</Button>
+			</div>
+		</div>
 	);
 };
 

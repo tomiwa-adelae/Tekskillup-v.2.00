@@ -45,8 +45,11 @@ const Showcase = () => {
 					</Button>
 				</motion.div>
 			</div>
-			<motion.div variants={slideIn("right", "tween", 0.2, 1)}>
-				{/* <Lottie animationData={animationData} className="flex-1" /> */}
+			<motion.div
+				className="flex-1"
+				variants={slideIn("right", "tween", 0.2, 1)}
+			>
+				{/* <Lottie animationData={animationData}  /> */}
 			</motion.div>
 		</motion.div>
 	);
