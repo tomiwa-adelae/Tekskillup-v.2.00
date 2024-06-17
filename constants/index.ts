@@ -354,3 +354,26 @@ export const ourTeams = [
 		image: "/assets/team.png",
 	},
 ];
+
+export const contactLinks = [
+	{
+		title: "support@tekskillup.com",
+		icon: Briefcase,
+		id: 1,
+		color: "#4ade80",
+	},
+
+	{
+		title: "Short Course",
+		icon: Layers,
+		id: 2,
+		color: "#4ade80",
+	},
+
+	{
+		title: "Learn with Expert Degree",
+		icon: UserRound,
+		id: 3,
+		color: "#4ade80",
+	},
+];
