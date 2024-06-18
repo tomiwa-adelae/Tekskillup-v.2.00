@@ -58,7 +58,7 @@ const Showcase = () => {
 					</Link>
 				</Button>
 			</motion.div>
-			<BackgroundBeams />
+			{/* <BackgroundBeams /> */}
 		</motion.div>
 	);
 };

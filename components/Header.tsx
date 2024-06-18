@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { MobileNavbar } from "./MobileNavbar";
+import { AdminMobileSideBar } from "./AdminMobileSideBar";
 import { MoveUpRight } from "lucide-react";
 import { headerLinks } from "@/constants";
 import { usePathname } from "next/navigation";
@@ -23,15 +24,18 @@ const Header = () => {
 			className="h-20 z-1000 flex items-center justify-center"
 		>
 			<div className="container flex items-center justify-between">
-				<Link href="/">
-					<Image
-						src={"/assets/tekskillup-logo.png"}
-						alt="Tekskillup Logo"
-						height={1000}
-						width={1000}
-						className="w-28 md:w-36"
-					/>
-				</Link>
+				<div className="flex items-center justify-start gap-3">
+					<AdminMobileSideBar />
+					<Link href="/">
+						<Image
+							src={"/assets/tekskillup-logo.png"}
+							alt="Tekskillup Logo"
+							height={1000}
+							width={1000}
+							className="w-28 md:w-36"
+						/>
+					</Link>
+				</div>
 				<nav className="hidden lg:block">
 					<ul className="flex text-xs items-center justify-center gap-4 lg:gap-6 uppercase">
 						{headerLinks.map((link) => {

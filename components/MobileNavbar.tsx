@@ -1,16 +1,10 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import {
 	Sheet,
 	SheetClose,
 	SheetContent,
-	SheetDescription,
-	SheetFooter,
-	SheetHeader,
-	SheetTitle,
 	SheetTrigger,
 } from "@/components/ui/sheet";
 import { headerLinks } from "@/constants";
@@ -39,22 +33,21 @@ export function MobileNavbar() {
 					<SheetClose asChild>
 						<div className="w-full">
 							<ul className="flex space-y-4 uppercase flex-col text-center">
-								{headerLinks.map((link) => {
-									const isActive = pathname === link.route;
+								{headerLinks.map(({ label, route }) => {
+									const isActive =
+										pathname === route ||
+										pathname.startsWith(`${route}/`);
 									return (
 										<>
-											<SheetClose
-												asChild
-												key={link.route}
-											>
+											<SheetClose asChild key={route}>
 												<Link
-													href={link.route}
+													href={route}
 													className={`${
 														isActive &&
 														"text-primary font-extrabold"
 													} text-xs hover:underline hover:text-primary cursor-pointer`}
 												>
-													{link.label}
+													{label}
 												</Link>
 											</SheetClose>
 											<Separator />

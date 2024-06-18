@@ -596,3 +596,26 @@ export const courseContents = [
 		content: "Jonnah Smith hshshsshshs shshshwys shshs",
 	},
 ];
+
+export const adminSideBarLinks = [
+	{
+		route: "/dashboard",
+		label: "Dashboard",
+	},
+	{
+		route: "/users",
+		label: "All users",
+	},
+	{
+		route: "/my-courses",
+		label: "All courses",
+	},
+	{
+		route: "/users-analytics",
+		label: "Users analytics",
+	},
+	{
+		route: "/courses-analytics",
+		label: "Courses analytics",
+	},
+];
