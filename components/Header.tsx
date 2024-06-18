@@ -21,7 +21,7 @@ const Header = () => {
 			variants={navVariants}
 			initial="hidden"
 			whileInView="show"
-			className="h-20 z-1000 flex items-center justify-center"
+			className="h-20 sticky top-0 left-0 bg-white z-20 flex items-center justify-center"
 		>
 			<div className="container flex items-center justify-between">
 				<div className="flex items-center justify-start gap-3">

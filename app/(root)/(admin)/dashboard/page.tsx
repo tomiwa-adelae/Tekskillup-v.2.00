@@ -1,9 +1,16 @@
-import { BackgroundBeams } from "@/components/ui/background-beams";
+import { DashboardBoxes } from "./_components/DashboardBoxes";
+import SubHeader from "../_components/SubHeader";
 
 const page = () => {
-	return <div>{/* <BackgroundBeams /> */}
-		{/* <Greetings /> */}
-	</div>;
+	return (
+		<div>
+			<SubHeader
+				title="Welcome, Adrian"
+				description="Access & manage everything from here"
+			/>
+			<DashboardBoxes />
+		</div>
+	);
 };
 
 export default page;

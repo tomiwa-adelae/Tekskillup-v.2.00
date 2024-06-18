@@ -4,7 +4,13 @@ import { motion } from "framer-motion";
 import { staggerContainer, textVariant } from "@/lib/motion";
 import { TypingSubText } from "@/components/CustomTexts";
 
-const Greetings = () => {
+const SubHeader = ({
+	title,
+	description,
+}: {
+	title: string;
+	description: string;
+}) => {
 	return (
 		<motion.div
 			// @ts-ignore
@@ -12,20 +18,19 @@ const Greetings = () => {
 			initial="hidden"
 			whileInView="show"
 			viewport={{ once: false, amount: 0.25 }}
-			className="container text-center py-12"
 		>
 			<TypingSubText
-				title={`Welcome, Adrian`}
+				title={title}
 				textStyles="text-green-400 text-2xl lg:text-3xl"
 			/>
 			<motion.p
 				variants={textVariant(1.2)}
-				className="text-xs lg:text-sm mt-4 lg:w-3/4 mx-auto"
+				className="text-xs lg:text-sm mt-4"
 			>
-				Access & manage everything from here
+				{description}
 			</motion.p>
 		</motion.div>
 	);
 };
 
-export default Greetings;
+export default SubHeader;

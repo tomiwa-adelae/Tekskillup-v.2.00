@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import { ClerkProvider } from "@clerk/nextjs";
 
 const montserrat = Montserrat({ subsets: ["latin"], weight: ["400", "700"] });
@@ -23,11 +21,7 @@ export default function RootLayout({
 	return (
 		<ClerkProvider>
 			<html lang="en">
-				<body className={montserrat.className}>
-					<Header />
-					{children}
-					<Footer />
-				</body>
+				<body className={montserrat.className}>{children}</body>
 			</html>
 		</ClerkProvider>
 	);

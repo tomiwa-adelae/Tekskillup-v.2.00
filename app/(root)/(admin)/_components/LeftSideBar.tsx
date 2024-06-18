@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 const LeftSideBar = () => {
 	const pathname = usePathname();
 	return (
-		<div className="hidden lg:flex container w-64 pt-4 border-r border-gray-300 flex-col gap-3">
+		<div className="hidden fixed left-0 top-20 h-screen lg:flex container w-64 pt-4 border-r border-gray-300 flex-col gap-3">
 			{adminSideBarLinks.map(({ route, label }, index) => {
 				const isActive =
 					pathname === route || pathname.startsWith(`${route}/`);

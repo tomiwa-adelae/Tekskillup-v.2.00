@@ -8,3 +8,7 @@ export const ContactSchema = z.object({
 	subject: z.string().max(100),
 	message: z.string().max(2000),
 });
+
+export const CreateCourseSchema = z.object({
+	name: z.string().max(100),
+});
