@@ -18,17 +18,17 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { toast } from "@/components/ui/use-toast";
-import { CreateCourseSchema } from "@/lib/validations";
+import { CourseWeekdaysPriceSchema } from "@/lib/validations";
 
-const CourseName = () => {
-	const form = useForm<z.infer<typeof CreateCourseSchema>>({
-		resolver: zodResolver(CreateCourseSchema),
+const CourseWeekdaysPrice = () => {
+	const form = useForm<z.infer<typeof CourseWeekdaysPriceSchema>>({
+		resolver: zodResolver(CourseWeekdaysPriceSchema),
 		defaultValues: {
-			name: "",
+			weekdaysPrice: 0,
 		},
 	});
 
-	function onSubmit(data: z.infer<typeof CreateCourseSchema>) {
+	function onSubmit(data: z.infer<typeof CourseWeekdaysPriceSchema>) {
 		toast({
 			title: "You submitted the following values:",
 			description: (
@@ -48,7 +48,9 @@ const CourseName = () => {
 		>
 			<div className="">
 				<div className="flex items-center justify-between gap-1">
-					<p className="text-xs font-bold uppercase">Course name</p>
+					<p className="text-xs font-bold uppercase">
+						Weekdays price
+					</p>
 
 					<Button
 						size={"sm"}
@@ -60,7 +62,7 @@ const CourseName = () => {
 					</Button>
 				</div>
 				<div>
-					<p className="text-sm mt-4">MERN Stack Development</p>
+					<p className="text-sm mt-4">40000</p>
 					{/* <Form {...form}>
 						<form
 							onSubmit={form.handleSubmit(onSubmit)}
@@ -73,7 +75,7 @@ const CourseName = () => {
 									<FormItem>
 										<FormControl>
 											<Input
-												placeholder="Write the name of your course..."
+												placeholder="Write the weekdays price of your course..."
 												{...field}
 											/>
 										</FormControl>
@@ -90,4 +92,4 @@ const CourseName = () => {
 	);
 };
 
-export default CourseName;
+export default CourseWeekdaysPrice;

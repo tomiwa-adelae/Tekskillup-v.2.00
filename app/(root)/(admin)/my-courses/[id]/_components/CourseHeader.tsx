@@ -23,13 +23,19 @@ const CourseHeader = ({ name }: { name: string }) => {
 				/>
 			</div>
 			<div className="flex items-center w-full justify-between md:justify-end gap-3">
-				<motion.div variants={fadeIn("left", "spring", 0.5, 0.75)}>
+				<motion.div
+					className="w-full md:w-auto"
+					variants={fadeIn("left", "spring", 0.5, 0.75)}
+				>
 					<Button className="w-full md:w-auto">
 						Publish
 						<BadgeCheck className="w-4 h-4 ml-2" />
 					</Button>
 				</motion.div>
-				<motion.div variants={fadeIn("left", "spring", 0.75, 0.75)}>
+				<motion.div
+					className="w-full md:w-auto"
+					variants={fadeIn("left", "spring", 0.75, 0.75)}
+				>
 					<DeleteCourseAlertModal />
 				</motion.div>
 			</div>

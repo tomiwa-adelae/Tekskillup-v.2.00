@@ -19,7 +19,7 @@ const LeftSideBar = () => {
 							isActive
 								? "bg-green-400 text-white font-bold"
 								: "text-gray-600"
-						} transition ease-out p-4 w-auto text-xs uppercase h-auto rounded-lg hover:bg-green-400`}
+						} transition ease-out p-4 w-auto text-xs uppercase h-auto rounded-lg hover:bg-green-400 hover:text-white`}
 					>
 						{label}
 					</Link>

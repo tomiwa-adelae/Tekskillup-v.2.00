@@ -18,17 +18,17 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { toast } from "@/components/ui/use-toast";
-import { CreateCourseSchema } from "@/lib/validations";
+import { CourseDescriptionSchema } from "@/lib/validations";
 
-const CourseName = () => {
-	const form = useForm<z.infer<typeof CreateCourseSchema>>({
-		resolver: zodResolver(CreateCourseSchema),
+const CourseDescription = () => {
+	const form = useForm<z.infer<typeof CourseDescriptionSchema>>({
+		resolver: zodResolver(CourseDescriptionSchema),
 		defaultValues: {
-			name: "",
+			description: "",
 		},
 	});
 
-	function onSubmit(data: z.infer<typeof CreateCourseSchema>) {
+	function onSubmit(data: z.infer<typeof CourseDescriptionSchema>) {
 		toast({
 			title: "You submitted the following values:",
 			description: (
@@ -48,7 +48,9 @@ const CourseName = () => {
 		>
 			<div className="">
 				<div className="flex items-center justify-between gap-1">
-					<p className="text-xs font-bold uppercase">Course name</p>
+					<p className="text-xs font-bold uppercase">
+						Course description
+					</p>
 
 					<Button
 						size={"sm"}
@@ -60,7 +62,23 @@ const CourseName = () => {
 					</Button>
 				</div>
 				<div>
-					<p className="text-sm mt-4">MERN Stack Development</p>
+					<p className="text-sm mt-4">
+						Lorem ipsum dolor, sit amet consectetur adipisicing
+						elit. Aut, consectetur corporis tenetur illum, modi
+						alias vel consequatur exercitationem et, quibusdam
+						pariatur incidunt nobis aspernatur. Ea laudantium sunt
+						nesciunt in eaque. Suscipit quisquam dolore enim, cum ea
+						id delectus optio incidunt amet qui totam sunt impedit
+						illo architecto accusamus placeat earum, reprehenderit
+						molestiae fugiat possimus fuga! Aspernatur quaerat
+						repudiandae quidem numquam? Vero consectetur perferendis
+						ad voluptatibus cupiditate sit quod laborum deleniti
+						quam, fugiat eius quo recusandae doloribus id amet eum
+						fuga, reprehenderit molestias possimus? Porro, maiores
+						quibusdam. Temporibus mollitia, alias, assumenda illum
+						minus facere et perferendis rerum fugit voluptatum
+						magnam delectus?
+					</p>
 					{/* <Form {...form}>
 						<form
 							onSubmit={form.handleSubmit(onSubmit)}
@@ -73,7 +91,7 @@ const CourseName = () => {
 									<FormItem>
 										<FormControl>
 											<Input
-												placeholder="Write the name of your course..."
+												placeholder="Write the description of your course..."
 												{...field}
 											/>
 										</FormControl>
@@ -90,4 +108,4 @@ const CourseName = () => {
 	);
 };
 
-export default CourseName;
+export default CourseDescription;

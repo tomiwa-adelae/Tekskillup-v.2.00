@@ -1,7 +1,6 @@
-import Image from "next/image";
 import SubHeader from "../_components/SubHeader";
-import SearchBar from "./_components/SearchBar";
 import { CoursesTable } from "./_components/CoursesTable";
+import SearchBar from "@/components/SearchBar";
 
 const page = () => {
 	return (
@@ -10,7 +9,7 @@ const page = () => {
 				title="All courses"
 				description="Access & manage all the published or drafted courses from here"
 			/>
-			<SearchBar />
+			<SearchBar type="courses" />
 			<CoursesTable />
 		</div>
 	);

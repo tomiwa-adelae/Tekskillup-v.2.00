@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input";
 import { FolderPlus } from "lucide-react";
 import Link from "next/link";
 
-const SearchBar = () => {
+const SearchBar = ({ type }: { type: string }) => {
 	return (
 		<motion.div
 			// @ts-ignore
@@ -21,18 +21,20 @@ const SearchBar = () => {
 				className="w-full"
 				variants={fadeIn("right", "spring", 0.3, 0.5)}
 			>
-				<Input type="text" placeholder="Search courses..." />
+				<Input type="text" placeholder={`Search ${type}...`} />
 			</motion.div>
-			<motion.div variants={fadeIn("left", "spring", 0.5, 0.75)}>
-				<Button asChild>
-					<Link href="/create-course">
-						<span className="hidden md:block">
-							Create new Course
-						</span>{" "}
-						<FolderPlus className="ml-0 md:ml-2 w-4 h-4" />
-					</Link>
-				</Button>
-			</motion.div>
+			{type === "courses" && (
+				<motion.div variants={fadeIn("left", "spring", 0.5, 0.75)}>
+					<Button asChild>
+						<Link href="/create-course">
+							<span className="hidden md:block">
+								Create new Course
+							</span>{" "}
+							<FolderPlus className="ml-0 md:ml-2 w-4 h-4" />
+						</Link>
+					</Button>
+				</motion.div>
+			)}
 		</motion.div>
 	);
 };

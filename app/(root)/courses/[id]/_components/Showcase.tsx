@@ -20,10 +20,10 @@ const Showcase = () => {
 			viewport={{ once: false, amount: 0.25 }}
 			className="min-h-[70vh] container relative flex items-start justify-center flex-col py-12 bg-green-400 bg-no-repeat bg-scroll bg-center bg-cover text-white"
 		>
-			{/* <Spotlight
+			<Spotlight
 				className="-top-40 left-0 md:left-60 md:-top-20"
 				fill="white"
-			/> */}
+			/>
 			<div className="w-full absolute inset-0 h-screen">
 				<SparklesCore
 					id="tsparticlesfullpage"
@@ -58,7 +58,7 @@ const Showcase = () => {
 					</Link>
 				</Button>
 			</motion.div>
-			{/* <BackgroundBeams /> */}
+			<BackgroundBeams />
 		</motion.div>
 	);
 };

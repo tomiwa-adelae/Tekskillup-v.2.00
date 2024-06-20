@@ -12,3 +12,31 @@ export const ContactSchema = z.object({
 export const CreateCourseSchema = z.object({
 	name: z.string().max(100),
 });
+
+export const CourseDescriptionSchema = z.object({
+	description: z.string().max(5000),
+});
+
+export const CourseOnlinePriceSchema = z.object({
+	onlinePrice: z.number(),
+});
+
+export const CourseWeekendPriceSchema = z.object({
+	weekendPrice: z.number(),
+});
+
+export const CourseWeekdaysPriceSchema = z.object({
+	weekdaysPrice: z.number(),
+});
+
+export const CourseWeekdaysDateSchema = z.object({
+	weekdaysDate: z.date(),
+});
+
+export const CourseWeekendDateSchema = z.object({
+	weekendDate: z.date(),
+});
+
+export const CourseImageSchema = z.object({
+	image: z.string(),
+});

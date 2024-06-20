@@ -1,5 +1,5 @@
-import { DashboardBoxes } from "./_components/DashboardBoxes";
 import SubHeader from "../_components/SubHeader";
+import DashboardBoxes from "./_components/DashboardBoxes";
 
 const page = () => {
 	return (

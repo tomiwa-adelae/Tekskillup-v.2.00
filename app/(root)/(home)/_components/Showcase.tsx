@@ -66,7 +66,7 @@ const Showcase = () => {
 				className="flex-1"
 				variants={slideIn("right", "tween", 0.2, 1)}
 			>
-				{/* <Lottie animationData={animationData} /> */}
+				<Lottie animationData={animationData} />
 			</motion.div>
 		</motion.div>
 	);
