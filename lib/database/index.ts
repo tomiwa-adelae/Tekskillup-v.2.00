@@ -13,10 +13,10 @@ export const connectToDatabase = async () => {
 		cached.promise ||
 		mongoose.connect(MONGO_URI, {
 			dbName: "tekskillup",
-			bufferCommands: "false",
+			bufferCommands: false,
 		});
 
-	cached.conn = await cached.promsie;
+	cached.conn = await cached.promise;
 
 	return cached.conn;
 };
