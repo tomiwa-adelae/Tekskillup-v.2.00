@@ -25,7 +25,7 @@ const Header = () => {
 		>
 			<div className="container flex items-center justify-between">
 				<div className="flex items-center justify-start gap-3">
-					<AdminMobileSideBar />
+					{/* <AdminMobileSideBar /> */}
 					<Link href="/">
 						<Image
 							src={"/assets/tekskillup-logo.png"}
