@@ -19,11 +19,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<ClerkProvider
-			appearance={{
-				variables: { colorPrimary: "#104F19" },
-			}}
-		>
+		<ClerkProvider>
 			<html lang="en">
 				<body className={montserrat.className}>{children}</body>
 			</html>
